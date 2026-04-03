@@ -22,8 +22,7 @@
 #include <unistd.h>
 
 
-#define CLICK_INTERVAL_MS 300.0
-
+#define CLICK_INTERVAL_MS 100.0
 
 int main(int argc, char *argv[]) {
     // TODO
@@ -69,7 +68,7 @@ int main(int argc, char *argv[]) {
 
         double currentTime = currentSeconds + currentMilli/1000;
         //printf("Time Check: %f\n", currentTime);//testing
-        double currentMilliTime = currentTime * 1000; //convert to milliseconds
+        //double currentMilliTime = currentTime * 1000; //convert to milliseconds
 
         double jitter = currentMilli - CLICK_INTERVAL_MS;
         printf("[click] elapsed: %f ms jitter: %f\n", currentMilli, jitter);

@@ -60,8 +60,10 @@ int main(int argc, char *argv[]) {
         ;
     }
     */
-    while(id[numHogs-1] == ogLastID){//wait for hogs to start
-        ;
+    if(numHogs>0){
+        while(id[numHogs-1] == ogLastID){//wait for hogs to start
+            ;
+        }
     }
 
 
